@@ -1,16 +1,16 @@
 //
-//  ViewController.m
-//  sideline
+//  SecondViewController.m
+//  DynamicsDemo
 //
-//  Created by Pegasus India on 23/07/15.
-//  Copyright (c) 2015 Pegasus India. All rights reserved.
+//  Created by Gabriel Theodoropoulos on 7/3/14.
+//  Copyright (c) 2014 Appcoda. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SecondViewController.h"
+
 #define menuWidth 150.0
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+@interface SecondViewController ()
 
 @property (nonatomic, strong) UIView *menuView;
 
@@ -26,15 +26,15 @@
 
 @end
 
-@implementation ViewController
+@implementation SecondViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view, typically from a nib.
     
     [self setupMenuView];
-    [ self settabbar];
+    
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
     
@@ -56,28 +56,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)settabbar
-{
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    vc1.title = @"FIRST";
-    vc1.view.backgroundColor = [UIColor blueColor];
-    
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.title = @"SECOND";
-    vc2.view.backgroundColor = [UIColor redColor];
-    
-    UITabBarController *tabBar = [[UITabBarController alloc] init];
-    tabBar.viewControllers = @[vc1,vc2];
-    tabBar.selectedIndex   = 1;
-    tabBar.view.frame = CGRectMake(50, 50, 220, 320);
-    
-    [tabBar willMoveToParentViewController:self];
-    [self.view addSubview:tabBar.view];
-    [self addChildViewController:tabBar];
-    [tabBar didMoveToParentViewController:self];
 
-
-}
 #pragma mark - Private method implementation
 
 -(void)setupMenuView{
@@ -196,4 +175,5 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
 }
+
 @end

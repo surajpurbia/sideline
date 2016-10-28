@@ -14,6 +14,8 @@
 		17F4D0B11B60C12500F5BB14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F4D0B01B60C12500F5BB14 /* Images.xcassets */; };
 		17F4D0B41B60C12500F5BB14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F4D0B21B60C12500F5BB14 /* LaunchScreen.xib */; };
 		17F4D0C01B60C12600F5BB14 /* sidelineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F4D0BF1B60C12600F5BB14 /* sidelineTests.m */; };
+		17F4D0CB1B60C5BB00F5BB14 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F4D0CA1B60C5BB00F5BB14 /* SecondViewController.m */; };
+		17F4D0CE1B60C86800F5BB14 /* tabbardyanmicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F4D0CD1B60C86800F5BB14 /* tabbardyanmicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		17F4D0B91B60C12600F5BB14 /* sidelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sidelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F4D0BE1B60C12600F5BB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17F4D0BF1B60C12600F5BB14 /* sidelineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sidelineTests.m; sourceTree = "<group>"; };
+		17F4D0C91B60C5BB00F5BB14 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		17F4D0CA1B60C5BB00F5BB14 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		17F4D0CC1B60C86800F5BB14 /* tabbardyanmicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabbardyanmicViewController.h; sourceTree = "<group>"; };
+		17F4D0CD1B60C86800F5BB14 /* tabbardyanmicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabbardyanmicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,11 @@
 				17F4D0A81B60C12500F5BB14 /* AppDelegate.m */,
 				17F4D0AA1B60C12500F5BB14 /* ViewController.h */,
 				17F4D0AB1B60C12500F5BB14 /* ViewController.m */,
+				17F4D0CC1B60C86800F5BB14 /* tabbardyanmicViewController.h */,
+				17F4D0CD1B60C86800F5BB14 /* tabbardyanmicViewController.m */,
 				17F4D0AD1B60C12500F5BB14 /* Main.storyboard */,
+				17F4D0C91B60C5BB00F5BB14 /* SecondViewController.h */,
+				17F4D0CA1B60C5BB00F5BB14 /* SecondViewController.m */,
 				17F4D0B01B60C12500F5BB14 /* Images.xcassets */,
 				17F4D0B21B60C12500F5BB14 /* LaunchScreen.xib */,
 				17F4D0A31B60C12500F5BB14 /* Supporting Files */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F4D0CB1B60C5BB00F5BB14 /* SecondViewController.m in Sources */,
 				17F4D0AC1B60C12500F5BB14 /* ViewController.m in Sources */,
 				17F4D0A91B60C12500F5BB14 /* AppDelegate.m in Sources */,
+				17F4D0CE1B60C86800F5BB14 /* tabbardyanmicViewController.m in Sources */,
 				17F4D0A61B60C12500F5BB14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = sideline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = sideline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

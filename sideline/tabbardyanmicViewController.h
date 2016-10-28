@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  tabbardyanmicViewController.h
 //  sideline
 //
 //  Created by Pegasus India on 23/07/15.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface tabbardyanmicViewController : UIViewController
+{
+    UITabBar *tabbar;
+    
+    
+}
 
 @end
-
